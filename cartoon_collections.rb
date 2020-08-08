@@ -6,16 +6,18 @@ def roll_call_dwarves(dwarfs)# code an argument here
   end
 end
 
-def summon_captain_planet(veggies)# code an argument here
+def summon_captain_planet(element)# code an argument here
   # Your code here
-  # planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
-    veggies.collect do |c|
+  # element = ["earth", "wind", "fire", "water", "heart"]
+    element.collect do |c|
     c.capitalize + "!"
   end
 end
 
-def long_planeteer_calls(array)
-  array.any? do |word|
+def long_planeteer_calls(calls)
+  #short_words = ["puff", "go", "two"]
+  #assorted_words = ["two", "go", "industrious", "bop"]
+  calls.any? do |word|
     word.length > 4
   end
 end
